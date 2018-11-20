@@ -1,0 +1,34 @@
+html {
+    min-height: 100%;
+     position: relative;
+     /* background-position: center;
+     background-image: url("clark.png");
+     background-size: cover; */
+   }
+
+   body {
+    width: 100%;
+    height: 100%;
+   }
+
+#mainmap {
+    padding-top: 100px;
+    max-width: 400px;
+    padding-bottom: 100px;
+}
+
+.footer {
+    /* clear: both; */
+    clear: both;
+    position: absolute;
+    background-color: #35beb1;
+    text-align: center;
+    color: white;
+    border-top: 5px solid  rgb(175, 167, 166);
+    overflow: hidden; 
+    padding-top: 15px; 
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    /* line-height: 60px */
+  }
