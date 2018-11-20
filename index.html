@@ -39,8 +39,8 @@
       var map = new H.Map(document.getElementById('map'),
         platform.createDefaultLayers().normal.map, {
           center: {
-            lat: 37.7942,
-            lng: -122.4070
+            lat: 41.8781,
+            lng: -87.6298
           },
           zoom: 15
         });
@@ -65,7 +65,7 @@
         // associated with them:
         'q': 'hotel',
         //  Search in the Chinatown district in San Francisco:
-        'at': '37.7942,-122.4070'
+        'at': '41.8781,-87.6298'
       };
 
       // Define a callback function to handle data on success:
@@ -95,6 +95,7 @@
       search.request(params, {}, onResult, onError);
     </script>
   </div>
+</div>
 
   <footer class="footer">
     <p id="copyRight">Map Testing</p>
