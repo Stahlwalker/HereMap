@@ -10,14 +10,20 @@
 
 <body style="margin: 0">
     <div id="map" style="width: 100vw; height: 100vh"></div>
+    <script type='text/javascript' src='config.js'></script>
     <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
     <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
     <script src="http://js.api.here.com/v3/3.0/mapsjs-mapevents.js" type="text/javascript" charset="utf-8"></script>
     <script src="http://js.api.here.com/v3/3.0/mapsjs-places.js" type="text/javascript" charset="utf-8"></script>
     <script>
+        var mykey = config.MY_KEY;
+        var secretkey = config.SECRET_KEY;
+        var key2 = config.KEY_2;
+        var secretkey2 = config.SECRET_KEY2;
+
         const platform = new H.service.Platform({
-            "app_id": "",
-            "app_code": ""
+            "app_id": mykey,
+            "app_code": key2
         });
         const geocoderService = platform.getGeocodingService();
         const search = new H.places.Search(platform.getPlacesService());
