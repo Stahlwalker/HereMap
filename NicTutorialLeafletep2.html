@@ -11,13 +11,18 @@
 
 <body>
     <div id="map" style="width: 100vw; height: 100vh"></div>
+    <script type='text/javascript' src='config.js'></script>
     <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
     <script>
         const tiles = "https://1.base.maps.api.here.com/maptile/2.1/maptile/newest/normal.day/{z}/{x}/{y}/512/png8?app_id={appId}&app_code={appCode}";
+        var mykey = config.MY_KEY;
+        var secretkey = config.SECRET_KEY;
+        var key2 = config.KEY_2;
+        var secretkey2 = config.SECRET_KEY2;
         const map = new L.Map("map", {
             center: [37, -121],
             zoom: 10,
-            layers: [L.tileLayer(tiles, { appId: "", appCode: ""})]
+            layers: [L.tileLayer(tiles, { appId: mykey, appCode: key2})]
         });
         const marker1 = new L.Marker({ lat: 37, lon: -121 });
         const marker2 = new L.Marker({ lat: 37.2, lon: -121.002 });

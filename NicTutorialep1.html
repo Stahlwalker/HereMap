@@ -10,13 +10,19 @@
 
 <body>
     <div id="map" style="width: 800px; height: 600px"></div>
+    <script type='text/javascript' src='config.js'></script>
     <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
     <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
     <script src="http://js.api.here.com/v3/3.0/mapsjs-mapevents.js" type="text/javascript" charset="utf-8"></script>
     <script>
+        var mykey = config.MY_KEY;
+        var secretkey = config.SECRET_KEY;
+        var key2 = config.KEY_2;
+        var secretkey2 = config.SECRET_KEY2;
+
         const platform = new H.service.Platform({
-            "app_id": "",
-            "app_code": ""
+            "app_id": mykey,
+            "app_code": key2
         });
         const map = new H.Map(
             document.getElementById("map"),
